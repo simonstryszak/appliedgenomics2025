@@ -1,0 +1,11 @@
+/mnt/c/Users/simon/Downloads/genetics_ml/appliedgenomics2025/assignments/assignment2/chr22_orig.fa /mnt/c/Users/simon/Downloads/genetics_ml/appliedgenomics2025/assignments/assignment2/chr22_mut0.01_s3.fa
+NUCMER
+>chr22:20000000-21000000 chr22:20000000-21000000 1000001 1000001
+1 1000001 1 1000001 10005 10005 0
+-162600
+-1
+-1
+22
+1
+1
+0

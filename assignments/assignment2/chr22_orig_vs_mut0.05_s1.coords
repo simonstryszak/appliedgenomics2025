@@ -1,0 +1,6 @@
+/mnt/c/Users/simon/Downloads/genetics_ml/appliedgenomics2025/assignments/assignment2/chr22_orig.fa /mnt/c/Users/simon/Downloads/genetics_ml/appliedgenomics2025/assignments/assignment2/chr22_mut0.05_s1.fa
+NUCMER
+
+    [S1]     [E1]  |     [S2]     [E2]  |  [LEN 1]  [LEN 2]  |  [% IDY]  |  [LEN R]  [LEN Q]  |  [COV R]  [COV Q]  | [TAGS]
+===============================================================================================================================
+       1  1000001  |        1  1000001  |  1000001  1000001  |    95.00  |  1000001  1000001  |   100.00   100.00  | chr22:20000000-21000000	chr22:20000000-21000000
