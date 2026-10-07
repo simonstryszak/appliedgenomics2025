@@ -1,1 +1,20 @@
 .DS_Store
+__pycache__/
+*.py[cod]
+
+# Reproducible Assignment 2 inputs and intermediate databases
+assignments/assignment2/question3_inputs/
+assignments/assignment2/solutions/question_3/mer_counts.jf
+assignments/assignment2/solutions/question_5/message.fa
+assignments/assignment2/solutions/question_5/message.fa.fai
+
+# SPAdes working files (retain final FASTA files and summary metadata)
+assignments/assignment2/solutions/question_4/spades_assembly/K*/
+assignments/assignment2/solutions/question_4/spades_assembly/before_rr.fasta
+assignments/assignment2/solutions/question_4/spades_assembly/corrected/
+assignments/assignment2/solutions/question_4/spades_assembly/misc/
+assignments/assignment2/solutions/question_4/spades_assembly/tmp/
+assignments/assignment2/solutions/question_4/spades_assembly/assembly_graph*
+assignments/assignment2/solutions/question_4/spades_assembly/contigs.paths
+assignments/assignment2/solutions/question_4/spades_assembly/scaffolds.paths
+assignments/assignment2/solutions/question_4/spades_assembly/pipeline_state/

@@ -1,0 +1,40 @@
+Command line: /home/simon/miniforge3/envs/appliedgenomics/bin/spades.py	--isolate	--pe1-1	/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/question3_inputs/asm/frag180.1.fq	--pe1-2	/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/question3_inputs/asm/frag180.2.fq	--mp1-1	/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/question3_inputs/asm/jump2k.1.fq	--mp1-2	/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/question3_inputs/asm/jump2k.2.fq	-o	/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly	-t	4	-k	31	
+
+System information:
+  SPAdes version: 4.3.0
+  Python version: 3.12.14
+  OS: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+
+Output dir: /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly
+Mode: ONLY assembling (without read error correction)
+Debug mode is turned OFF
+
+Dataset parameters:
+  Isolate mode
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/question3_inputs/asm/frag180.1.fq']
+      right reads: ['/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/question3_inputs/asm/frag180.2.fq']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+    Library number: 2, library type: mate-pairs
+      orientation: rf
+      left reads: ['/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/question3_inputs/asm/jump2k.1.fq']
+      right reads: ['/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/question3_inputs/asm/jump2k.2.fq']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Assembly parameters:
+  k: [31]
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+  Assembly graph output will use GFA v1.2 format
+Other parameters:
+  Dir for temp files: /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/tmp
+  Threads: 4
+  Memory limit (in Gb): 15
+

@@ -1,3 +1,6 @@
+from pathlib import Path
+
+
 reads = [
     "ATTCA",
     "ATTGA",
@@ -28,7 +31,9 @@ for kmer in kmers:
     suffix = kmer[1:]
     edges.append((prefix, suffix))
 
-with open("question2.dot", "w") as file:
+output_path = Path(__file__).with_name("question2.dot")
+
+with output_path.open("w") as file:
     file.write("digraph debruin {\n")
 
     for prefix, suffix in edges:

@@ -1,0 +1,13 @@
+GenomeScope version 2.0
+input file = solutions/question_3/reads.histo
+output directory = solutions/question_3/genomescope_output
+p = 1
+k = 21
+
+property                      min               max
+Homozygous (a)                100%              100%
+Genome Haploid Length         233,011 bp        233,420 bp
+Genome Repeat Length          0 bp              0 bp
+Genome Unique Length          233,011 bp        233,420 bp
+Model Fit                     98.5387%          98.5387%
+Read Error Rate               0.811971%         0.811971%

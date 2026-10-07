@@ -1,0 +1,96 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Before_start_JTIO9EJDHCH3D7JAO3O8B7OKFKDI6960
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_VP6611VAFUWBJIZZJFXU8V767JLBO8O1
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K31
+  args:
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/K31/configs/config.info
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/K31/configs/isolate_mode.info
+  config_dir: K31
+  del_after: []
+  job_uuid: SPAdes_K31_QMYTYW1L9FDWIE3TLOSBCB47B558XM4T
+  mpi_support: false
+  output_files: []
+  path: /home/simon/miniforge3/envs/appliedgenomics/bin/spades-core
+  short_name: k31
+- STAGE: Copy files
+  args:
+  - /home/simon/miniforge3/envs/appliedgenomics/share/spades/spades_pipeline/supplemetary/copy_files.py
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/K31/before_rr.fasta
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/before_rr.fasta
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/K31/assembly_graph_after_simplification.gfa
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/assembly_graph_after_simplification.gfa
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/K31/final_contigs.fasta
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/contigs.fasta
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/K31/first_pe_contigs.fasta
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/first_pe_contigs.fasta
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/K31/strain_graph.gfa
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/strain_graph.gfa
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/K31/scaffolds.fasta
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/scaffolds.fasta
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/K31/scaffolds.paths
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/scaffolds.paths
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/K31/assembly_graph_with_scaffolds.gfa
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/assembly_graph_with_scaffolds.gfa
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/K31/assembly_graph.fastg
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/assembly_graph.fastg
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/K31/final_contigs.paths
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_c14x289v
+  job_uuid: SPAdes_Copy_files_K6PONFMQ8XTMH1KICC3GS535U12EQXQL
+  mpi_support: false
+  output_files: []
+  path: /home/simon/miniforge3/envs/appliedgenomics/bin/python3
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_P9AN1P0HH5TG09OL7NNOLD31ZGHB7LAU
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /home/simon/miniforge3/envs/appliedgenomics/share/spades/spades_pipeline/supplemetary/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/scaffolds.fasta
+  - --misc_dir
+  - /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Breaking_scaffolds_4SP16JUN9TZZEPZIV7EY57YCSBRMS1TG
+  mpi_support: false
+  output_files: []
+  path: /home/simon/miniforge3/envs/appliedgenomics/bin/python3
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  job_uuid: SPAdes_Terminate_E83OGCS2EG7TRSILO0OUFSRNJT16HFA6
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: terminate

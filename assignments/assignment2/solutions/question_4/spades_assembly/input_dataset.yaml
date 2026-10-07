@@ -1,0 +1,14 @@
+- "left reads":
+  - "/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/question3_inputs/asm/frag180.1.fq"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/question3_inputs/asm/frag180.2.fq"
+  "type": "paired-end"
+- "left reads":
+  - "/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/question3_inputs/asm/jump2k.1.fq"
+  "number": !!int "1"
+  "orientation": "rf"
+  "right reads":
+  - "/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/question3_inputs/asm/jump2k.2.fq"
+  "type": "mate-pairs"

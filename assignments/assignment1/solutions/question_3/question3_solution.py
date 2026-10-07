@@ -2,7 +2,10 @@ from math import log
 import gzip 
 import matplotlib.pyplot as plt
 import math 
+from pathlib import Path
 
+DATA_DIR = Path(__file__).resolve().parents[1]
+CHR22_FASTA = DATA_DIR / "chr22.fa.gz"
 
 
 base_counts = {
@@ -13,7 +16,7 @@ base_counts = {
     "N": 0  
 }
 
-with gzip.open("appliedgenomics2025/assignments/assignment1/chr22.fa.gz", "rt") as fasta_file:
+with gzip.open(CHR22_FASTA, "rt") as fasta_file:
     for line in fasta_file:
         if line.startswith(">"):
             continue
@@ -35,7 +38,7 @@ print(base_counts)
 print("Total Chromosome Length: ", sum(base_counts.values()))
 
 sequence_parts = []
-with gzip.open("appliedgenomics2025/assignments/assignment1/chr22.fa.gz", "rt") as fasta_file:
+with gzip.open(CHR22_FASTA, "rt") as fasta_file:
     for line in fasta_file:
         if line.startswith(">"):
             continue

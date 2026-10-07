@@ -1,0 +1,20 @@
+/mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/question3_inputs/asm/ref.fa /mnt/c/Users/simon/Downloads/appliedgenomics2025/assignments/assignment2/solutions/question_4/spades_assembly/contigs.fasta
+NUCMER
+>Halomonas NODE_1_length_105834_cov_18.177840 233806 105834
+127960 233793 105834 1 0 0 0
+0
+221067 221165 6995 6897 4 4 0
+0
+226799 226897 12727 12629 4 4 0
+0
+>Halomonas NODE_2_length_47849_cov_17.929943 233806 47849
+40664 88512 47849 1 0 0 0
+0
+>Halomonas NODE_3_length_41445_cov_18.207587 233806 41445
+3 26789 41445 14659 0 0 0
+0
+26788 40639 13852 1 0 0 0
+0
+>Halomonas NODE_4_length_39441_cov_18.559959 233806 39441
+88516 127956 39441 1 0 0 0
+0
